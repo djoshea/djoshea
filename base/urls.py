@@ -1,10 +1,8 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
-from os.path import dirname, join
+from settings import media_root
 
 admin.autodiscover()
-
-media_root = join(dirname(__file__), 'media')
 
 urlpatterns = patterns('django.views.static',
     (r'^media/(?P<path>.*)$', 'serve', 
