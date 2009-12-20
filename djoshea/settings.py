@@ -78,4 +78,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 	'django.contrib.auth',
     'base',
+    'lifebits',
+    'lifebits.entries',
 )
